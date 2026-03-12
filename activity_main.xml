@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Odgadnij flagę"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="16dp" />
+
+    <ImageView
+        android:id="@+id/imageFlag"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_weight="1"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/francji" />
+
+    <ListView
+        android:id="@+id/listViewAnswers"
+        android:layout_width="match_parent"
+        android:layout_height="255dp"
+        android:dividerHeight="8dp" />
+
+    <Button
+        android:id="@+id/buttonRandom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Losuj flagę"
+        android:backgroundTint="#00A000"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/textScore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="odpowiedziałeś 0 / 4"
+        android:textAlignment="center"
+        android:textSize="26sp"
+        android:paddingTop="8dp" />
+</LinearLayout>
